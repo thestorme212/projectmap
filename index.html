@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Google Maps Store Locator</title>
+    <script src="https://kit.fontawesome.com/c939d0e917.js"></script>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+
+<div class="title"> Store Locator</div>
+
+<div id="map"></div>
+<div class="search-container">
+    <div class="search">
+        <input type="text" id="zip-code-input" placeholder="Enter Zip Code">
+        <i id="icon-search" onclick="SearchStores()" class="fas fa-search-location"></i>
+    </div>
+
+</div>
+<div class="store-liste-container">
+    <div class="store-liste">
+        <div class="store-container">
+            <div class="store-container-background">
+                <div class="store-info-container">
+                    <div class="store-adress">
+                        <span>6066 West Olympic Boulevard</span>
+                        <span>Los Angeles, CA 90036</span>
+                    </div>
+                    <div class="store-phone">
+                        123-1234-1239
+                    </div>
+                </div>
+                <div class="store-number-container">
+                    <div class="store-number">1</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<script src="js/index.js"></script>
+<script src="js/store-data.js"></script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAH8Xh-1F5vZLRbcW8dNAPj80B72ogq76M&callback=initMap">
+</script>
+
+</body>
+</html>
